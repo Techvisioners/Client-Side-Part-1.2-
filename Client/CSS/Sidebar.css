@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background: rgb(1, 16, 17);
+    background-position: cover;
+    margin: 0;
+}
+
+.Sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 110px;
+    height: 100%;
+    background-color: white;
+    border-right: 1px solid rgb(200, 196, 196);
+    padding-right: 10px;
+    transition: width 0.3s ease;
+    overflow: hidden; /* Hide overflow when the sidebar is collapsed */
+    border-radius: 5px;
+
+}
+
+.Sidebar:hover {
+    width: 267px;
+}
+
+.Sidebar .logo {
+    display: flex;
+    align-items: center;
+    padding: 25px 10px 25px;
+    transition: margin-left 0.3s ease;
+}
+
+.logo img {
+    width: 60px;
+    border-radius: 50%;
+    margin-left: 25px;
+}
+
+.logo h2 {
+    margin-left: 15px;
+    display: none; /* Initially hide the text */
+}
+
+.Sidebar:hover .logo h2 {
+    display: block;
+}
+
+.Sidebar:hover .folio li a,
+.Sidebar:hover .links li a {
+    display: block;
+}
+
+/* Initially hide the sections */
+.Sidebar .folio h3,
+.Sidebar .folio ul,
+.Sidebar .links h3,
+.Sidebar .links ul {
+    display: none;
+}
+
+.Sidebar:hover .folio h3,
+.Sidebar:hover .folio ul,
+.Sidebar:hover .links h3,
+.Sidebar:hover .links ul {
+    display: block;
+}
+
+.Sidebar .folio {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.folio li {
+    display: flex;
+    align-items: center;
+}
+
+.folio li:hover {
+    background-color: #5a75d5;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 3px;
+}
+
+.folio li span {
+    padding: 12px 10px;
+}
+
+.folio li span,
+.links li span {
+    font-size: 27px; /* You can adjust this value to your preference */
+}
+
+.folio li a {
+    color: #000000;
+    text-decoration: none;
+    padding: 10px;
+    white-space: nowrap;
+    font-weight: 500;
+    display: none; /* Initially hide the text */
+}
+
+/* Show text when the sidebar is expanded */
+.Sidebar:hover .folio li a {
+    display: block;
+}
+
+.links li {
+    display: flex;
+    align-items: center;
+}
+
+.links li:hover {
+    background-color: #5a75d5;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 3px;
+}
+
+.links li span {
+    padding: 12px 10px;
+}
+
+.links li a {
+    color: #000000;
+    text-decoration: none;
+    padding: 10px;
+    white-space: nowrap;
+    font-weight: 500;
+    display: none; /* Initially hide the text */
+}
+
+/* Show text when the sidebar is expanded */
+.Sidebar:hover .links li a {
+    display: block;
+}
+
+.folio .btnLog {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.folio .btnLog:hover {
+    background-color: rgb(242, 70, 70);
+    border-radius: 4px;
+}
+
+.folio .btnLog a {
+    color: #000000;
+    text-decoration: none;
+    padding: 10px;
+    white-space: nowrap;
+    font-weight: 500;
+    display: none; /* Initially hide the text */
+}
+
+.folio .btnLog:hover a {
+    display: block;
+}
+
+
+/* Add some styling to the sub-menu */
+.sub-menu {
+    padding-left: 20px; /* Adjust as needed for spacing */
+    list-style: none;
+    margin: 0;
+}
+
+.sub-menu li {
+    display: flex;
+    align-items: center;
+}
+
+.sub-menu li span,
+.sub-menu li a {
+    margin-right: 10px; /* Adjust as needed for spacing */
+}
+
+
+
+
+
+
+
